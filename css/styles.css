@@ -4,35 +4,51 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html, body {
+     height: 100%;
+}
 
 /* Body */
 body {
-    min-height: 100vh;
+    /* margin-top: 55%; */
     background: #000000;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
- * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+}
 
-        body {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #000000;
-            overflow: hidden;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
+/* Header */
+header {
+    width:100%;
+    height: 100vh;
+    background-image: url(../links/background\ photo.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-attachment: fixed; /* This creates the fixed background effect */
 
-
-h1 {
+    padding: 40px 60px;
+    z-index: 0;
+    position: relative;
+}
+h1.logo {
     font-family: "helvetica-neue", sans-serif;
-    font-size: 24px;
     font-weight: light;
     color: white;
+    letter-spacing: 2px;
+
+   position: fixed;
+   z-index: 290;
+   top: 50px;
+   left:50px;
+   font-size: 5vw;
+
+}
+
+.sig {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 218px;
+    aspect-ratio: 218 / 168;
 }
 
 .wrapper {
@@ -40,23 +56,33 @@ h1 {
     width: 100%;
     max-width: 100%;
 }
-
-/* Header */
-.header {
-    padding: 40px 60px;
-    font-size: 16px;
-    font-weight: 300;
-    color: white;
-    letter-spacing: 2px;
+.wrapper-photo {
+    /* Set the background image properties */
+    background-image: url('/links/background\ photo.webp'); /* Replace with your image file path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-attachment: fixed; /* This creates the fixed background effect */
+    
+    /* Position and size the container to cover the viewport */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Puts the background behind other content */
 }
 
-.header p {
-    margin: 0;
-}
+
+
+
+
 
 /* Main */
 .main {
     width: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 /* Hero Section */
@@ -66,8 +92,9 @@ h1 {
     padding: 60px;
     background: #000000;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
+    color: white;
 }
 
 .hero p:first-child {
@@ -121,6 +148,7 @@ h1 {
     aspect-ratio: 1 / 1;
     background: linear-gradient(165deg, #0a0a0a 0%, #1a1a1a 45%, #0f0f0f 100%);
     overflow: hidden;
+    background-attachment: fixed;
 }
 
 .background-image img {
@@ -137,8 +165,8 @@ h1 {
     top: -15%;
     left: 50%;
     transform: translateX(-50%);
-    width: 280px;
-    height: 380px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     filter: blur(35px);
     opacity: 0.7;
     z-index: 1;
@@ -150,8 +178,8 @@ h1 {
     top: 8%;
     left: 50%;
     transform: translateX(-50%);
-    width: 240px;
-    height: 340px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     filter: blur(25px);
     opacity: 0.5;
     z-index: 1;
@@ -233,6 +261,10 @@ h1 {
 .music-videos {
     padding: 60px;
     background: #000000;
+    width: 100%; 
+    video {
+        width: 100%; 
+    }
 }
 
 .music-videos h1 {
