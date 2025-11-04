@@ -5,15 +5,12 @@
     box-sizing: border-box;
 }
 
-<<<<<<< Updated upstream
 /* Body */
 body {
     min-height: 100vh;
     background: #000000;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-=======
->>>>>>> Stashed changes
  * {
             margin: 0;
             padding: 0;
@@ -501,8 +498,6 @@ h1 {
 }
 
 .icons {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     display: flex;
     justify-content: center;
     align-items: center;
@@ -551,11 +546,3 @@ h1 {
     }
 }
 }
-=======
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    margin-top: 50px;
-}
->>>>>>> Stashed changes
