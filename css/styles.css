@@ -35,13 +35,11 @@ h1.logo {
     font-weight: light;
     color: white;
     letter-spacing: 2px;
-
-   position: fixed;
-   z-index: 290;
-   top: 50px;
-   left:50px;
-   font-size: 5vw;
-
+    position: fixed;
+    z-index: 290;
+    top: 50px;
+    left:50px;
+    font-size: 5vw;
 }
 
 .sig {
