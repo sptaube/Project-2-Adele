@@ -26,13 +26,13 @@ header {
     background-attachment: fixed; /* This creates the fixed background effect */
 
     padding: 40px 60px;
-    z-index: 0;
+    z-index: 2;
     position: relative;
 }
 
-h1.logo {
-    font-family: "helvetica neue", sans-serif;
-    font-weight: 200;
+.logo {
+    font-family: "helvetica-neue", sans-serif;
+    font-weight: light;
     color: white;
     letter-spacing: 8px;
     position: fixed;
@@ -81,7 +81,7 @@ h1.logo {
 .main {
     width: 100%;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 /* Hero Section */
