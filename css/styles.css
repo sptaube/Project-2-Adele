@@ -31,10 +31,10 @@ header {
 }
 
 h1.logo {
-    font-family: "helvetica-neue", sans-serif;
-    font-weight: light;
+    font-family: "helvetica neue", sans-serif;
+    font-weight: 200;
     color: white;
-    letter-spacing: 2px;
+    letter-spacing: 8px;
     position: fixed;
     z-index: 290;
     top: 50px;
@@ -97,15 +97,15 @@ h1.logo {
 }
 
 .hero p:first-child {
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 200;
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
 
 .hero p:nth-child(2) {
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 200;
     line-height: 1.6;
     max-width: 600px;
     color: rgba(255, 255, 255, 0.8);
@@ -253,6 +253,7 @@ h1.logo {
 .album-container:hover .glass-overlay {
     transform: translateY(120%);
     opacity: 0;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>✨</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 
 /* Music Videos Section */
@@ -266,32 +267,52 @@ h1.logo {
 }
 
 .music-videos h1 {
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 200;
     letter-spacing: 2px;
     margin-bottom: 40px;
 }
 
 /* Photo Gallery Section */
-.photo-gallery {
+.gallery {
     padding: 60px;
     background: #000000;
 }
 
-.photo-gallery p {
-    font-size: 12px;
-    font-weight: 300;
+.gallery-container-left {
+    display: grid;
+    gap: 20px;
+}
+
+.gallery-container-right {
+    display: flex;
+    gap: 20px;
+}
+
+.gallery-container-bottom {
+    display: flex;
+    gap: 20px;
+}
+
+.gallery p {
+    font-size: 16px;
+    font-weight: 200;
     line-height: 1.6;
     max-width: 800px;
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 40px;
 }
 
-.photo-gallery img {
-    width: calc(33.333% - 20px);
-    aspect-ratio: 1 / 1;
+.gallery-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    aspect-ratio: 2 / 1;
     object-fit: cover;
-    margin: 10px;
 }
 
 /* Footer */
@@ -305,10 +326,10 @@ h1.logo {
 }
 
 .socials h1 {
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    margin: 0 0 30px 0;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    margin: 20px 0 80px 0;
     text-align: center;
 }
 
@@ -329,6 +350,7 @@ h1.logo {
 
 .icons img:hover {
     opacity: 1;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>✨</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 
 /* General Typography */
@@ -340,13 +362,17 @@ h1 {
     letter-spacing: 2px;
 }
 
-/* Responsive */
+
+/* Responsive Section */
+
+/* Desktop */
 @media (max-width: 1024px) {
     .album-container {
         width: calc(50% - 20px);
     }
 }
 
+/* Tablets */
 @media (max-width: 768px) {
     .album-container {
         width: calc(100% - 20px);
