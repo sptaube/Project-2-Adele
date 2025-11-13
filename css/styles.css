@@ -344,7 +344,6 @@ header {
 }
 
 .icons img {
-    width: 24px;
     height: 24px;
     opacity: 0.8;
     transition: opacity 0.3s ease;
@@ -423,7 +422,7 @@ h1 {
 
 /* Mobile */
 @media (max-width: 480px) {
-    .hero {
+.hero {
     position: relative;
     width: 100%;
     padding: 60px;
@@ -449,13 +448,13 @@ h1 {
     color: rgba(255, 255, 255, 0.8);
 }
 
-    .hero img {
+.hero img {
     width: 100%;
     max-width: 100%;
     margin-top: 20px;
     }
 
-    .albums {
+.albums {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -478,7 +477,7 @@ h1 {
 }
 
 .gallery-container-left {
-    display: grid;
+    display: flex;
     gap: 40px;
 }
 
