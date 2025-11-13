@@ -195,10 +195,17 @@ header {
 
 .glass-overlay-wrapper svg {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+   
     width: 100%;
     height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.svg-text {
+    font-size: 15vw;
+
 }
 
 .glass-overlay {
@@ -374,6 +381,38 @@ h1 {
 
 /* Tablets */
 @media (max-width: 768px) {
+    .hero {
+    position: relative;
+    width: 100%;
+    padding: 60px;
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.hero p:first-child {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.6;
+    max-width: 600px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+    .hero img {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    }
+
     .album-container {
         width: calc(100% - 20px);
     }
@@ -385,4 +424,104 @@ h1 {
     .photo-gallery img {
         width: calc(50% - 20px);
     }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .hero {
+    position: relative;
+    width: 100%;
+    padding: 60px;
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.hero p:first-child {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.6;
+    max-width: 600px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+    .hero img {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    }
+
+   
+}
+
+/* .svg-text {
+    font-size: 150px;
+
+} */
+
+    .albums {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: calc(100%);
+    gap: 30px;
+}
+
+.album-container {
+    position: relative;
+    width: calc(40%);
+    aspect-ratio: 1 / 1;
+}
+
+/* Photo Gallery Section */
+.gallery {
+    padding: 60px;
+    background: #000000;
+}
+
+.gallery-container-left {
+    display: grid;
+    gap: 20px;
+}
+
+.gallery-container-right {
+    display: flex;
+    gap: 20px;
+}
+
+.gallery-container-bottom {
+    display: flex;
+    gap: 20px;
+}
+
+.gallery p {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.6;
+    max-width: 800px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+}
+
+.gallery-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
 }
